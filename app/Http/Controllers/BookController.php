@@ -148,6 +148,16 @@ class BookController extends Controller
         }
 
         $markdown = file_get_contents($filePath);
+        // Remove duplicate H1 when the first line of the file is exactly "# {chapter title}"
+        $titleHeading = '# ' . $chapter['title'];
+        if (str_starts_with(trim($markdown), $titleHeading)) {
+            $markdown = preg_replace(
+                '/^\s*' . preg_quote($titleHeading, '/') . '\s*\r?\n/',
+                '',
+                $markdown,
+                1
+            );
+        }
         $converter = $this->getConverter();
         $html = $converter->convert($markdown)->getContent();
 
