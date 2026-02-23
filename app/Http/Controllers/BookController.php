@@ -95,7 +95,7 @@ class BookController extends Controller
 
     protected function getBookPath(): string
     {
-        return base_path('book');
+        return config('book.path');
     }
 
     protected function getConverter(): MarkdownConverter

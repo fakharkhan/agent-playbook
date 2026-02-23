@@ -7,7 +7,7 @@ Live site: [ai-for-artisans.fakharkhan.com](https://ai-for-artisans.fakharkhan.c
 ## What's included
 
 - **Laravel app** — Landing page, table of contents, and chapter reader with Markdown rendering
-- **Book content** — All chapters in `book/` (Markdown), rendered on the fly with CommonMark
+- **Book content** — All chapters in `book/` (Markdown), rendered on the fly. Path is configurable in `config/book.php`.
 
 ## Requirements
 
