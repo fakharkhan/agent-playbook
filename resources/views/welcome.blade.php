@@ -14,6 +14,13 @@
     <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
 
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+        {{-- Back to main site --}}
+        <a href="https://fakharkhan.com" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-300 transition-colors mb-8 group" rel="noopener noreferrer">
+            <svg class="h-4 w-4 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            Back to fakharkhan.com
+        </a>
         <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             {{-- Left: Text content --}}
             <div class="flex-1 text-center lg:text-left">
@@ -40,7 +47,7 @@
                 </p>
 
                 <p class="mt-4 text-base text-slate-500">
-                    By <span class="text-slate-300 font-medium">Fakhar Zaman Khan</span>
+                    By <a href="https://fakharkhan.com" class="text-slate-300 font-medium hover:text-white transition-colors underline decoration-slate-500 hover:decoration-slate-400 underline-offset-2" rel="noopener noreferrer">Fakhar Zaman Khan</a>
                 </p>
 
                 <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -92,7 +99,7 @@
                             </div>
 
                             <div class="flex items-center justify-between text-xs text-slate-500">
-                                <span>By Fakhar Zaman Khan</span>
+                                <a href="https://fakharkhan.com" class="hover:text-slate-300 transition-colors" rel="noopener noreferrer">By Fakhar Zaman Khan</a>
                                 <span>2026 &middot; Laravel 12</span>
                             </div>
                         </div>
@@ -203,9 +210,10 @@
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p class="text-sm text-slate-500">&copy; {{ date('Y') }} Fakhar Zaman Khan. AI for Artisans.</p>
             <div class="flex items-center gap-6 text-sm text-slate-500">
+                <a href="https://fakharkhan.com" class="hover:text-white transition-colors" rel="noopener noreferrer">fakharkhan.com</a>
                 <a href="{{ route('book.index') }}" class="hover:text-white transition-colors">Table of Contents</a>
-                <a href="https://github.com/laravel/ai" target="_blank" class="hover:text-white transition-colors">GitHub</a>
-                <a href="https://laravel.com" target="_blank" class="hover:text-white transition-colors">Laravel</a>
+                <a href="https://github.com/laravel/ai" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+                <a href="https://laravel.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Laravel</a>
             </div>
         </div>
         <p class="mt-6 text-xs text-slate-600 text-center max-w-3xl mx-auto leading-relaxed">
