@@ -1,39 +1,56 @@
-# AI for Artisans — Book Site
+# The A.G.E.N.T. Playbook
 
-Laravel web application for **AI for Artisans: Mastering the Laravel AI SDK** by Fakhar Zaman Khan.
+Publishable book site for **The A.G.E.N.T. Playbook** — Fakhar Khan's applied agentic AI workflow guide from the Harvard Data Science Review intensive (April 2026).
 
-Live site: [ai-for-artisans.fakharkhan.com](https://ai-for-artisans.fakharkhan.com)
+**Live URL (when deployed):** https://agent-playbook.fakharkhan.com
 
-## What's included
+## Structure
 
-- **Laravel app** — Landing page, table of contents, and chapter reader with Markdown rendering
-- **Book content** — All chapters in `book/` (Markdown), rendered on the fly. Path is configurable in `config/book.php`.
+Markdown chapters live in `book/`. Chapter routing is defined in `app/Http/Controllers/BookController.php`.
 
-## Requirements
+| Slug | Chapter |
+|------|---------|
+| `preface` | Preface |
+| `strategy-and-workflow-selection` | Strategy & Workflow Selection |
+| `audit` | Audit |
+| `gauge` | Gauge |
+| `engineer` | Engineer |
+| `navigate` | Navigate |
+| `track` | Track |
+| `implementation` | Implementation (pilot charter) |
+| `appendix` | Appendix |
 
-- PHP 8.4+
-- Composer
-- Node.js & npm (for frontend assets)
+## Source material
 
-## Setup
+Content derived from the NXGL-HDSR-COURSE training folder:
+
+- `Your Agentic AI Framework.docx` (final playbook)
+- `docs/next-steps-toward-implementation-section-6.md`
+- `docs/your-agentic-ai-strategy-section-4-3-and-4-4.md`
+- `docs/how-this-course-connects-to-professional-goals.md`
+- `docs/lesson-chat-354006-radical-workflow-redesign-summary.md`
+
+## Local development
 
 ```bash
 composer install
-cp .env.example .env
-php artisan key:generate
 npm install && npm run build
 php artisan serve
 ```
 
-Visit `http://localhost:8000`. No database required.
+Or use Laravel Herd: site served at `agent-playbook.test` when linked.
 
-## Deployment
+## Deploy
 
-- Set `APP_URL` to your domain (e.g. `https://ai-for-artisans.fakharkhan.com`)
-- Run `php artisan config:cache` and `php artisan view:cache` in production
-- Point your web server (Nginx/Apache) at the `public/` directory
+Same pattern as `ai-for-artisans` and `book-beyond-code`:
 
-## License
+1. Push to GitHub (`fakharkhan/agent-playbook`)
+2. Forge site on subdomain `agent-playbook.fakharkhan.com`
+3. `composer install --no-dev`, `npm run build`, `php artisan config:cache && php artisan view:cache`
 
-The Laravel framework is open-sourced under the [MIT license](https://opensource.org/licenses/MIT).  
-Book content © Fakhar Zaman Khan. This is an independent, community-authored guide and is not affiliated with Laravel LLC or Taylor Otwell.
+No database required.
+
+## Linked from
+
+- [fakharkhan.com/about](https://fakharkhan.com/about) — Books section
+- [fakharkhan.com](https://fakharkhan.com) footer

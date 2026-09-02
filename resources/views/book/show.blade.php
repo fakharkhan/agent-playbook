@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $chapter['title'] . ' — AI for Artisans')
+@section('title', $chapter['title'] . ' — The A.G.E.N.T. Playbook')
 
 @section('content')
 <div class="pt-16 flex">
@@ -21,7 +21,7 @@
                         <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-xs font-bold {{ $s === $slug ? 'bg-red-500/20 text-red-400' : 'bg-white/5 text-slate-500' }}">
                             @if($ch['part'] === 'Front Matter')
                                 P
-                            @elseif($ch['part'] === 'Appendices')
+                            @elseif($ch['part'] === 'Appendix' || $ch['part'] === 'Appendices')
                                 A
                             @else
                                 {{ str_contains($ch['part'], '&') ? '6' : substr($ch['part'], -1) }}

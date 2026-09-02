@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Table of Contents — AI for Artisans')
+@section('title', 'Table of Contents — The A.G.E.N.T. Playbook')
 
 @section('content')
 <div class="pt-16">
@@ -9,14 +9,14 @@
         <div class="text-center mb-16">
             <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight">Table of Contents</h1>
             <p class="mt-4 text-lg text-slate-400">
-                AI for Artisans — Mastering the Laravel AI SDK
+                The A.G.E.N.T. Playbook — Agentic AI for Software Delivery
             </p>
             <div class="mt-6 flex items-center justify-center gap-3 text-sm text-slate-500">
-                <span>By Fakhar Zaman Khan</span>
+                <span>By Fakhar Khan</span>
                 <span class="text-slate-700">|</span>
                 <span>First Edition, 2026</span>
                 <span class="text-slate-700">|</span>
-                <span>Laravel 12 &middot; PHP 8.4+</span>
+                <span>Harvard HDSR Agentic AI Intensive</span>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                                     <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                                     </svg>
-                                @elseif($chapter['part'] === 'Appendices')
+                                @elseif($chapter['part'] === 'Appendix' || $chapter['part'] === 'Appendices')
                                     <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                     </svg>
