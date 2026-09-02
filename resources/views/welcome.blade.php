@@ -81,4 +81,43 @@
         </div>
     </div>
 </section>
+
+<section class="relative border-t border-white/5 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        <div class="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:items-center lg:gap-16">
+            <div class="max-w-xl">
+                <p class="text-xs uppercase tracking-widest text-red-300/80">Program credential</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Harvard Data Science Review
+                </h2>
+                <p class="mt-4 text-lg text-slate-300 leading-relaxed">
+                    This playbook grew out of <strong class="font-semibold text-white">Agentic AI: Contextualized and Applied</strong>, a 2.5-week intensive presented by Harvard Data Science Review (April 14–30, 2026).
+                </p>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    The A.G.E.N.T. framework and pilot charter in these pages are applied practitioner work — not official Harvard curriculum — but the program shaped how the workflows were audited, scored, and measured.
+                </p>
+                <p class="mt-6 text-sm text-slate-500">
+                    Verification code: <span class="font-mono text-slate-400">KKNW-EQWZ</span>
+                </p>
+            </div>
+
+            <figure class="relative mx-auto w-full max-w-sm lg:max-w-none">
+                <div class="absolute -inset-4 rounded-2xl bg-gradient-to-br from-red-900/20 to-transparent blur-2xl"></div>
+                <div class="relative overflow-hidden rounded-xl border border-white/10 bg-white shadow-2xl shadow-black/40">
+                    <img
+                        src="{{ asset('images/harvard-agentic-ai-certificate.png') }}"
+                        alt="Harvard Data Science Initiative certificate of completion for Fakhar Khan — Agentic AI: Contextualized and Applied, April 14–30, 2026"
+                        width="800"
+                        height="1035"
+                        class="w-full h-auto"
+                        loading="lazy"
+                    />
+                </div>
+                <figcaption class="mt-4 text-center text-xs text-slate-500">
+                    Certificate of completion · Presented by Harvard Data Science Review
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
 @endsection
