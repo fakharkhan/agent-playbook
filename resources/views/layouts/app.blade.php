@@ -25,7 +25,7 @@
 
                 <div class="flex items-center gap-4">
                     <a href="https://fakhar-khan.com" class="hidden sm:flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">
-                        fakharkhan.com
+                        fakhar-khan.com
                     </a>
                     <a href="{{ route('book.index') }}" class="rounded-lg bg-red-900/40 border border-red-700/30 px-4 py-2 text-sm font-medium text-red-100 hover:bg-red-800/50 transition-colors">
                         Read the Book
