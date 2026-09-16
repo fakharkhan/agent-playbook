@@ -2,7 +2,7 @@
 
 Publishable book site for **The A.G.E.N.T. Playbook** — Fakhar Khan's applied agentic AI workflow guide from the Harvard Data Science Review intensive (April 2026).
 
-**Live URL (when deployed):** https://agent-playbook.fakharkhan.com
+**Live URL (when deployed):** https://agent-playbook.fakhar-khan.com
 
 ## Structure
 
@@ -45,12 +45,12 @@ Or use Laravel Herd: site served at `agent-playbook.test` when linked.
 Same pattern as `ai-for-artisans` and `book-beyond-code`:
 
 1. Push to GitHub (`fakharkhan/agent-playbook`)
-2. Forge site on subdomain `agent-playbook.fakharkhan.com`
+2. Forge site on subdomain `agent-playbook.fakhar-khan.com`
 3. `composer install --no-dev`, `npm run build`, `php artisan config:cache && php artisan view:cache`
 
 No database required.
 
 ## Linked from
 
-- [fakharkhan.com/about](https://fakharkhan.com/about) — Books section
-- [fakharkhan.com](https://fakharkhan.com) footer
+- [fakhar-khan.com/about](https://fakhar-khan.com/about) — Books section
+- [fakhar-khan.com](https://fakhar-khan.com) footer

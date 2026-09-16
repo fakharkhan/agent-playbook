@@ -39,7 +39,7 @@ Apply first to **internal delivery standards** (evidence packs, approvals, trace
 
 This playbook was developed during the **Harvard Data Science Review 2.5 Week Agentic AI Intensive** (*Agentic AI: Contextualized and Applied*, April 14–30, 2026), presented by the Harvard Data Science Initiative.
 
-**Author:** Fakhar Khan · Soft Pyramid LLC · [fakharkhan.com](https://fakharkhan.com)
+**Author:** Fakhar Khan · Soft Pyramid LLC · [fakhar-khan.com](https://fakhar-khan.com)
 
 **Certificate verification:** KKNW-EQWZ
 
