@@ -24,7 +24,10 @@
                 </a>
 
                 <div class="flex items-center gap-4">
-                    <a href="https://fakhar-khan.com" class="hidden sm:flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">
+                    <a href="#about-author" class="hidden sm:inline text-sm text-slate-400 hover:text-white transition-colors">
+                        About the Author
+                    </a>
+                    <a href="https://fakhar-khan.com" class="hidden md:flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">
                         fakhar-khan.com
                     </a>
                     <a href="{{ route('book.index') }}" class="rounded-lg bg-red-900/40 border border-red-700/30 px-4 py-2 text-sm font-medium text-red-100 hover:bg-red-800/50 transition-colors">
@@ -38,6 +41,27 @@
     <main>
         @yield('content')
     </main>
+
+
+    <section id="about-author" class="border-t border-white/5 bg-slate-900/40">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+                <img src="{{ asset('images/author-fakhar-khan.jpg') }}"
+                     alt="Fakhar Khan"
+                     class="h-28 w-28 shrink-0 rounded-2xl object-cover border border-white/10 shadow-lg shadow-red-950/40" />
+                <div class="text-center sm:text-left">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-red-400/80 mb-2">About the Author</p>
+                    <h2 class="text-2xl font-semibold text-white tracking-tight">Fakhar Khan</h2>
+                    <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-400">Fakhar Khan is Founder &amp; CEO of Soft Pyramid — an enterprise architect, Certified Laravel Expert, and Pakistan&rsquo;s first n8n Creator. He writes practical guides on agentic AI, Laravel, and leadership from Frisco, TX and Lahore.</p>
+                    <a href="https://fakhar-khan.com" rel="noopener noreferrer"
+                       class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-red-300 hover:text-red-200 transition-colors">
+                        Visit fakhar-khan.com
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="border-t border-white/5 bg-slate-950">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
