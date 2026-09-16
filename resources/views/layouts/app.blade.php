@@ -24,7 +24,7 @@
                 </a>
 
                 <div class="flex items-center gap-4">
-                    <a href="https://fakharkhan.com" class="hidden sm:flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">
+                    <a href="https://fakhar-khan.com" class="hidden sm:flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">
                         fakharkhan.com
                     </a>
                     <a href="{{ route('book.index') }}" class="rounded-lg bg-red-900/40 border border-red-700/30 px-4 py-2 text-sm font-medium text-red-100 hover:bg-red-800/50 transition-colors">
@@ -43,7 +43,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
             <p class="text-center text-sm text-slate-500">
                 &copy; {{ date('Y') }} Fakhar Khan · Soft Pyramid LLC ·
-                <a href="https://fakharkhan.com" class="text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">fakharkhan.com</a>
+                <a href="https://fakhar-khan.com" class="text-slate-400 hover:text-white transition-colors" rel="noopener noreferrer">fakhar-khan.com</a>
             </p>
             <p class="text-center text-xs text-slate-600 mt-2">
                 Developed during the Harvard Data Science Review Agentic AI Intensive (April 2026)
